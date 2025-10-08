@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read/write access to productivity tracker data
+    match /users/{userId}/consistency/{document=**} {
+      allow read, write: if true; // You can add user authentication later
+    }
+    
+    // For now, allow all reads/writes for development
+    // In production, you should add proper authentication rules
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
