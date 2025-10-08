@@ -81,7 +81,7 @@ export async function saveDailyData(date, weekday, score, color, phases = null) 
         console.error('Error saving to Firebase:', error);
         
         // Fallback to localStorage
-        return saveToLocalStorage(date, weekday, score, color);
+        return saveToLocalStorage(date, weekday, score, color, phases);
     }
 }
 
