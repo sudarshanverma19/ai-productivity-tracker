@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#00C853"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="256" cy="256" r="220" fill="white" fill-opacity="0.1"/>
+  
+  <!-- Productivity Graph Icon -->
+  <g transform="translate(128, 128)">
+    <!-- Grid Background -->
+    <rect x="32" y="32" width="192" height="192" fill="white" fill-opacity="0.1" rx="8"/>
+    
+    <!-- Grid Lines -->
+    <g stroke="white" stroke-opacity="0.3" stroke-width="2">
+      <path d="M48 48L48 208M80 48L80 208M112 48L112 208M144 48L144 208M176 48L176 208M208 48L208 208"/>
+      <path d="M48 48L208 48M48 80L208 80M48 112L208 112M48 144L208 144M48 176L208 176M48 208L208 208"/>
+    </g>
+    
+    <!-- Progress Bars with Animation Effect -->
+    <rect x="56" y="176" width="16" height="24" fill="white" rx="4"/>
+    <rect x="88" y="152" width="16" height="48" fill="white" rx="4"/>
+    <rect x="120" y="112" width="16" height="88" fill="white" rx="4"/>
+    <rect x="152" y="88" width="16" height="112" fill="white" rx="4"/>
+    <rect x="184" y="64" width="16" height="136" fill="white" rx="4"/>
+    
+    <!-- Trend Line -->
+    <path d="M64 184L96 164L128 128L160 104L192 80" stroke="#FFD600" stroke-width="6" stroke-linecap="round" fill="none"/>
+    
+    <!-- Data Points -->
+    <circle cx="64" cy="184" r="6" fill="#FFD600"/>
+    <circle cx="96" cy="164" r="6" fill="#FFD600"/>
+    <circle cx="128" cy="128" r="6" fill="#FFD600"/>
+    <circle cx="160" cy="104" r="6" fill="#FFD600"/>
+    <circle cx="192" cy="80" r="6" fill="#FFD600"/>
+    
+    <!-- Highlight Ring -->
+    <circle cx="192" cy="80" r="12" fill="none" stroke="#FFD600" stroke-width="3" stroke-opacity="0.6"/>
+  </g>
+  
+  <!-- AI Symbol -->
+  <g transform="translate(380, 380)">
+    <circle cx="32" cy="32" r="32" fill="white" fill-opacity="0.95"/>
+    <text x="32" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#00C853">AI</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.2">
+    <circle cx="100" cy="100" r="4" fill="white"/>
+    <circle cx="412" cy="100" r="4" fill="white"/>
+    <circle cx="100" cy="412" r="4" fill="white"/>
+    <circle cx="200" cy="50" r="2" fill="white"/>
+    <circle cx="312" cy="50" r="2" fill="white"/>
+    <circle cx="50" cy="200" r="2" fill="white"/>
+    <circle cx="462" cy="312" r="2" fill="white"/>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+{
+  "name": "AI Productivity Tracker",
+  "short_name": "ProductivityTracker",
+  "description": "Track your daily productivity with AI-powered insights and visual heatmaps",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#00C853",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["productivity", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "icons/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AI Productivity Tracker - Desktop View"
+    },
+    {
+      "src": "icons/screenshot-narrow.png", 
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI Productivity Tracker - Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick Entry",
+      "short_name": "Quick Entry",
+      "description": "Quickly log today's productivity",
+      "url": "/index.html#quick-entry",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "View Heatmap",
+      "short_name": "Heatmap",
+      "description": "View your 30-day consistency heatmap",
+      "url": "/index.html#heatmap",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ]
+}

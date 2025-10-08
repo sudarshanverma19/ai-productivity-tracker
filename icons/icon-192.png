@@ -1,0 +1,11 @@
+# PNG Placeholder File - Replace with actual 192x192 PNG icon
+# This is a placeholder. To create actual PNG files:
+# 1. Use online SVG to PNG converters with the provided SVG files
+# 2. Or use tools like Inkscape, GIMP, or Photoshop
+# 3. Ensure the final files are:
+#    - icon-192.png (192x192 pixels)
+#    - icon-512.png (512x512 pixels)
+# 4. Both should have the green theme (#00C853) and productivity chart design
+
+# For quick testing, you can use any 192x192 PNG file temporarily
+PNG_PLACEHOLDER_192x192

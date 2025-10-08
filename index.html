@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Productivity Tracker</title>
+    <meta name="description" content="Track your daily productivity with AI-powered insights">
+    <meta name="theme-color" content="#00C853">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="AI Productivity Tracker">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Productivity Tracker</h1>
+        </header>
+        
+        <main>
+            <!-- Phase Tracking Table -->
+            <section class="tracking-section">
+                <div class="card">
+                    <h2>Daily Phase Tracking</h2>
+                    <table class="phase-table">
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Status</th>
+                                <th>Productivity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Phase 1</td>
+                                <td>
+                                    <select class="status-dropdown" data-phase="1">
+                                        <option value="">Select Status</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                        <option value="other-important-work">Other Important Work</option>
+                                        <option value="intentionally-declined">Intentionally Declined</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="productivity-dropdown" data-phase="1">
+                                        <option value="">Select Productivity</option>
+                                        <option value="highly-productive">Highly Productive</option>
+                                        <option value="productive">Productive</option>
+                                        <option value="average">Average</option>
+                                        <option value="below-average">Below Average</option>
+                                        <option value="least-productive">Least Productive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phase 2</td>
+                                <td>
+                                    <select class="status-dropdown" data-phase="2">
+                                        <option value="">Select Status</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                        <option value="other-important-work">Other Important Work</option>
+                                        <option value="intentionally-declined">Intentionally Declined</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="productivity-dropdown" data-phase="2">
+                                        <option value="">Select Productivity</option>
+                                        <option value="highly-productive">Highly Productive</option>
+                                        <option value="productive">Productive</option> 
+                                        <option value="average">Average</option>
+                                        <option value="below-average">Below Average</option>
+                                        <option value="least-productive">Least Productive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phase 3</td>
+                                <td>
+                                    <select class="status-dropdown" data-phase="3">
+                                        <option value="">Select Status</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                        <option value="other-important-work">Other Important Work</option>
+                                        <option value="intentionally-declined">Intentionally Declined</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="productivity-dropdown" data-phase="3">
+                                        <option value="">Select Productivity</option>
+                                        <option value="highly-productive">Highly Productive</option>
+                                        <option value="productive">Productive</option>
+                                        <option value="average">Average</option>
+                                        <option value="below-average">Below Average</option>
+                                        <option value="least-productive">Least Productive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phase 4</td>
+                                <td>
+                                    <select class="status-dropdown" data-phase="4">
+                                        <option value="">Select Status</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                        <option value="other-important-work">Other Important Work</option>
+                                        <option value="intentionally-declined">Intentionally Declined</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="productivity-dropdown" data-phase="4">
+                                        <option value="">Select Productivity</option>
+                                        <option value="highly-productive">Highly Productive</option>
+                                        <option value="productive">Productive</option>
+                                        <option value="average">Average</option>
+                                        <option value="below-average">Below Average</option>
+                                        <option value="least-productive">Least Productive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phase 5</td>
+                                <td>
+                                    <select class="status-dropdown" data-phase="5">
+                                        <option value="">Select Status</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                        <option value="other-important-work">Other Important Work</option>
+                                        <option value="intentionally-declined">Intentionally Declined</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="productivity-dropdown" data-phase="5">
+                                        <option value="">Select Productivity</option>
+                                        <option value="highly-productive">Highly Productive</option>
+                                        <option value="productive">Productive</option>
+                                        <option value="average">Average</option>
+                                        <option value="below-average">Below Average</option>
+                                        <option value="least-productive">Least Productive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="button-container">
+                        <button id="generateButton" class="generate-btn">Generate Daily Color</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 30-Day Consistency Heatmap -->
+            <section class="heatmap-section">
+                <div class="card">
+                    <h2>30-Day Consistency Heatmap</h2>
+                    <div class="heatmap-container">
+                        <div id="heatmapGrid" class="heatmap-grid">
+                            <!-- Grid squares will be generated by JavaScript -->
+                        </div>
+                        <div class="heatmap-legend">
+                            <span>Less</span>
+                            <div class="legend-colors">
+                                <div class="legend-color" style="background-color: #f0f0f0;" title="No data"></div>
+                                <div class="legend-color" style="background-color: #E8F5E8;" title="1-20 points"></div>
+                                <div class="legend-color" style="background-color: #C8E6C9;" title="21-40 points"></div>
+                                <div class="legend-color" style="background-color: #A5D6A7;" title="41-60 points"></div>
+                                <div class="legend-color" style="background-color: #81C784;" title="61-80 points"></div>
+                                <div class="legend-color" style="background-color: #66BB6A;" title="81-100 points"></div>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Tooltip for heatmap -->
+    <div id="tooltip" class="tooltip"></div>
+    
+    <!-- Scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

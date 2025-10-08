@@ -1,0 +1,36 @@
+{
+  "name": "ai-productivity-tracker",
+  "version": "1.0.0",
+  "description": "A Progressive Web App for tracking daily productivity with AI-powered insights",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required for vanilla JS app'",
+    "deploy": "firebase deploy",
+    "serve": "firebase serve"
+  },
+  "keywords": [
+    "productivity",
+    "tracker",
+    "pwa",
+    "progressive-web-app",
+    "firebase",
+    "javascript",
+    "daily-tracking",
+    "heatmap"
+  ],
+  "author": "Sud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[YOUR-USERNAME]/ai-productivity-tracker.git"
+  },
+  "homepage": "https://[YOUR-PROJECT-ID].web.app",
+  "devDependencies": {
+    "firebase-tools": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
